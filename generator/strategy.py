@@ -1,5 +1,5 @@
 
-DBP_en_DBP_ja_15K_V1 = {
+DBP_en_DBP_ru_15K_V1 = DBP_en_DBP_ja_15K_V1 = {
     'max_degree_kg1': 100,
     'max_degree_kg2': 100,
     'delete_ratio': 0.01,

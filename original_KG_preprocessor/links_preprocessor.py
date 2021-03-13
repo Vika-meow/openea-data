@@ -149,8 +149,8 @@ def run(path, language):
         links_new = other_en
         other = 'YG_en'
     else:
-        en_other = read_links_raw(path + 'raw_data/DBpedia/interlanguage_links_en.ttl', language)
-        other_en = read_links_raw(path + 'raw_data/DBpedia/interlanguage_links_' + language + '.ttl', 'en')
+        en_other = read_links_raw(path + 'en/interlanguage_links_en.ttl', language)
+        other_en = read_links_raw(path + language + '/interlanguage_links_' + language + '.ttl', 'en')
         links_new = en_other | other_en
         other = 'DBP_' + language
     print('raw links:', len(links_new))
@@ -179,7 +179,7 @@ def run(path, language):
     write_links(path+'processed_data/ent_links/ent_links_DBP_en_'+other, links_new)
 
 
-run('H:/workspace/VLDB2020/SampKG/', 'ja')
+run('../../', 'ru')
 # ls = read_links_raw_geonames('/media/sl/Data/workspace/VLDB/SampKG/raw_data/DBpedia/geonames_links_en.ttl')
 # write_links('/media/sl/Data/workspace/VLDB/SampKG/processed_data/ent_links/ent_links_DBP_en_GN_en', ls)
 

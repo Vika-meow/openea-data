@@ -8,8 +8,8 @@ from generator.discriminator import *
 
 parser = argparse.ArgumentParser(description='DataGenerator')
 
-KG1, KG2 = 'DBP_en', 'WD_en'
-folder_input = '../../../processed_data/'
+KG1, KG2 = 'DBP_en', 'DBP_ru'
+folder_input = '../processed_data/'
 
 #
 target_dataset = KG1 + '_' + KG2 + '_1M_V1'
