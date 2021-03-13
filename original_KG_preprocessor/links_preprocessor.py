@@ -1,4 +1,7 @@
 # import ftfy
+import sys
+# insert at 1, 0 is the script path (or '' in REPL)
+sys.path.insert(1, '/home/v_gnezdilova/ssd/out/JAPEcode/openea-data/')
 
 from data_processor.file_io import *
 
@@ -179,7 +182,7 @@ def run(path, language):
     write_links(path+'processed_data/ent_links/ent_links_DBP_en_'+other, links_new)
 
 
-run('../../', 'ru')
+run('/home/v_gnezdilova/ssd/out/JAPEcode/', 'ru')
 # ls = read_links_raw_geonames('/media/sl/Data/workspace/VLDB/SampKG/raw_data/DBpedia/geonames_links_en.ttl')
 # write_links('/media/sl/Data/workspace/VLDB/SampKG/processed_data/ent_links/ent_links_DBP_en_GN_en', ls)
 

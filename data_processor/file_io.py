@@ -43,7 +43,7 @@ def read_triples(file_path):
     triples = set()
     with open(file_path, 'r', encoding='utf-8') as file:
         for line in file:
-            line = line.strip('\n').split('\t')
+            line = line.split()
             triples.add((line[0], line[1], line[2]))
     file.close()
     print('read_triples:', file_path, 'triple_num:', len(triples))
