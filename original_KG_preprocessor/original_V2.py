@@ -22,6 +22,6 @@ def generate_v2(triples):
 
 
 if __name__ == '__main__':
-    path = '/home/v_gnezdilova/ssd/out/JAPEcode/rel_triples_DBP_en'
+    path = '/home/v_gnezdilova/ssd/out/JAPEcode/processed_data/rel_triples/rel_triples_DBP_ru'
     tr = generate_v2(read_triples(path))
     write_triples(path+'_V2', tr)
