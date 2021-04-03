@@ -1,3 +1,5 @@
+import sys
+sys.path.insert(1, '/home/v_gnezdilova/ssd/out/JAPEcode/openea-data/')
 from others.utils import *
 from data_processor.file_io import *
 
