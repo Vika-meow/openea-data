@@ -34,7 +34,7 @@ parser.add_argument('--KG1_attr_triple_path', type=str, default=folder_input+'at
 parser.add_argument('--KG2_attr_triple_path', type=str, default=folder_input+'attr_triples/attr_triples_' + KG2)
 parser.add_argument('--ent_link_path', type=str, default=folder_input+'ent_links/ent_links_' + KG1 + '_' + KG2)
 
-parser.add_argument('--output_folder', type=str, default='../../../sampled_data_rebuttal/')
+parser.add_argument('--output_folder', type=str, default='/home/v_gnezdilova/ssd/out/JAPEcode/sampled_data_rebuttal/')
 parser.add_argument('--dataset_division', type=str, default='721')
 parser.add_argument('--draw_degree_distribution', type=bool, default=True)
 
@@ -74,7 +74,7 @@ if __name__ == '__main__':
             data.write_generated_data(sample_data, dataset_sample_index)
             dataset_sample_index += 1
         else:
-            data.draw(sample_data, './fig/')
+            #data.draw(sample_data, '../fig/')
             wrong_num += 1
         # data.write_generated_data(sample_data, dataset_sample_index)
         # break

@@ -21,11 +21,11 @@ def read_triple_dbp_raw(file_path, language):
 
 
 def run_dbp(language):
-    folder = 'H:\workspace\VLDB2020\SampKG\\'
-    rel_triples = read_triple_dbp_raw(folder+'raw_data\DBpedia\\mappingbased_objects_'+language+'.ttl', language)
-    attr_triples = read_triple_dbp_raw(folder+'raw_data\DBpedia\\mappingbased_literals_'+language+'.ttl', language)
-    write_triples(folder+'processed_data\\rel_triples\\rel_triples_DBP_'+language, rel_triples)
-    write_triples(folder+'processed_data\\attr_triples\\attr_triples_DBP_'+language, attr_triples)
+    folder = '/home/v_gnezdilova/ssd/out/JAPEcode/'
+    rel_triples = read_triple_dbp_raw(folder+language+'/mappingbased_objects_'+language+'.ttl', language)
+    attr_triples = read_triple_dbp_raw(folder+language+'/mappingbased_literals_'+language+'.ttl', language)
+    write_triples(folder+'processed_data/rel_triples/rel_triples_DBP_'+language, rel_triples)
+    write_triples(folder+'processed_data/attr_triples/attr_triples_DBP_'+language, attr_triples)
 
 
-run_dbp('ja')
+run_dbp('en')

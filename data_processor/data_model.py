@@ -62,10 +62,10 @@ class DataModel:
 
         output_folder = self.args.output_folder + str(sample_index) + '/'
         if not os.path.exists(output_folder):
-            os.mkdir(output_folder)
+            os.makedirs(output_folder)
         output_folder += self.args.target_dataset + '/'
         if not os.path.exists(output_folder):
-            os.mkdir(output_folder)
+            os.makedirs(output_folder)
 
         if self.args.draw_degree_distribution:
             self.draw(sample_data, output_folder)
