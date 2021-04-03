@@ -20,6 +20,6 @@ def generate_v2(triples):
 
 
 if __name__ == '__main__':
-    path = '/media/sl/Data/workspace/VLDB2019/SampKG/processed_data/rel_triples/rel_triples_WD_en'
+    path = '/home/v_gnezdilova/ssd/out/JAPEcode/rel_triples_DBP_en'
     tr = generate_v2(read_triples(path))
     write_triples(path+'_V2', tr)
