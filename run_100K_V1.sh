@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-data_folder="../../../"
+data_folder="../"
 log_folder=${data_folder}sampled_data/log/
 if [ ! -d ${log_folder} ];then
     mkdir -p ${log_folder}

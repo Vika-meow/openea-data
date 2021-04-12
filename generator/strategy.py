@@ -118,7 +118,7 @@ DBP_en_YG_en_15K_V2 = {
 }
 
 DBP_en_DBP_fr_100K_V1 = DBP_en_DBP_fr_15K_V1
-DBP_en_DBP_fr_100K_V2 = {
+DBP_en_DBP_fr_100K_V2 = DBP_en_DBP_ru_100K_V1 = {
     'max_degree_kg1': 100,
     'max_degree_kg2': 100,
     'delete_ratio': 0.025,
